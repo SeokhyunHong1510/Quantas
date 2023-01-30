@@ -1,0 +1,137 @@
+.navBox {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: black;
+  z-index: 20;
+
+  .eventBox {
+    width: 100vw;
+    background-color: #ec2626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .event {
+      width: 1020px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 30px;
+      color: black;
+      font-size: 15px;
+      font-weight: 500;
+
+      .closebutton {
+        display: flex;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .navTop {
+    display: flex;
+    justify-content: space-between;
+    width: 1020px;
+    height: 100px;
+    align-items: center;
+
+    img {
+      width: 156px;
+      height: 30px;
+    }
+
+    .navRight {
+      display: flex;
+      width: 337px;
+      height: 48px;
+      justify-content: space-around;
+      align-items: center;
+
+      .selectLevel {
+        font-size: 15px;
+        width: 210px;
+        height: 30px;
+        background-color: #1e1e1e;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #1e1e1e;
+        border-radius: 35px;
+
+        .falseLevel {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 70px;
+          height: 30px;
+          text-align: center;
+          border: 1px solid #1e1e1e;
+          border-radius: 35px;
+        }
+
+        .trueLevel {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 70px;
+          height: 30px;
+          border: 1px solid #ec6126;
+          border-radius: 35px;
+          background-color: #ec6126;
+        }
+      }
+
+      .login {
+        font-size: 16px;
+        color: #ec2626;
+      }
+    }
+  }
+
+  .navMenu {
+    width: 100vw;
+    height: 100px;
+    font-size: 40px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      display: flex;
+      width: 1020px;
+      align-items: center;
+
+      .navList0 {
+        width: 110px;
+        display: flex;
+        align-items: center;
+        margin-right: 64px;
+
+        .navList {
+          color: white;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+
+          .자산배분 {
+            color: #ec6126;
+          }
+
+          div {
+            width: 110px;
+          }
+        }
+      }
+    }
+  }
+}

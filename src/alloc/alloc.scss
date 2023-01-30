@@ -1,0 +1,221 @@
+.allocBox {
+  margin: 0 auto;
+  width: 1020px;
+  padding-top: 150px;
+
+  .allocName {
+    width: 1020px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0e0e0e;
+    position: sticky;
+    top: 150px;
+    align-items: center;
+
+    .underLine {
+      width: 800px;
+      height: 45px;
+      border-bottom: 2px solid white;
+
+      .input {
+        width: 800px;
+        height: 45px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      input::placeholder {
+        color: white;
+      }
+    }
+
+    .button {
+      z-index: 20;
+      width: 136px;
+      height: 46px;
+      border: 1px solid #ec6126;
+      background-color: #ec6126;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 6px;
+
+      &:disabled {
+        cursor: default;
+        border: 1px solid #3e3e3e;
+        background-color: #3e3e3e;
+      }
+    }
+  }
+
+  .fix {
+    width: 600px;
+    height: 100px;
+
+    .comment-input {
+      background-color: #ec6126;
+      width: 140px;
+      height: 40px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  .calendar {
+    p {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .option {
+    width: 1020px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h1 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .optionBox {
+      font-size: 16px;
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 88px;
+      width: 640px;
+
+      p {
+        font-size: 13px;
+        color: gray;
+      }
+
+      .arrowBox {
+        display: flex;
+
+        select {
+          height: 45px;
+          -webkit-appearance: none; /* 크롬 화살표 없애기 */
+          -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
+          appearance: none /* 화살표 없애기 */;
+          text-align-last: center;
+          width: 640px;
+          background-color: #0e0e0e;
+          color: white;
+          border-radius: 6px;
+          &:hover {
+            border: 1px solid white;
+          }
+
+          option {
+            text-align: center;
+            background-color: #0e0e0e;
+            height: 45px;
+          }
+        }
+      }
+
+      .bandRebalance {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid gray;
+        border-radius: 6px;
+
+        input {
+          border: none;
+          width: 600px;
+          height: 45px;
+          background-color: transparent;
+          color: white;
+
+          &::placeholder {
+            color: white;
+            text-align: center;
+          }
+          input[type='number']::-webkit-outer-spin-button,
+          input[type='number']::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+          }
+        }
+
+        .percent {
+          width: 40px;
+          height: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        &:hover {
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+
+  .reLoad {
+    width: 155px;
+    height: 42px;
+    position: sticky;
+    bottom: 80px;
+    margin-top: 600px;
+    margin-left: 1050px;
+    border: 1px solid #ec6126;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0e0e;
+    color: white;
+  }
+
+  .add {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    height: 26px;
+
+    .comments {
+      margin-top: 50px;
+      border-bottom: 1px solid gray;
+      height: 300px;
+
+      .innerBox {
+        padding-top: 100px;
+      }
+    }
+  }
+  .inner {
+    font-size: 15px;
+  }
+
+  .testButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec6126;
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto -10px auto;
+  }
+}
+.lineBar {
+  margin-left: 440px;
+  width: 140px;
+  height: 40px;
+  border-radius: 6px;
+  z-index: -1;
+}
